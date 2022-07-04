@@ -51,7 +51,6 @@ main{
     padding: 20px 10px 10px;
     font-weight: 600;
     color: #343434;
-
 }
 .login_label input:focus{
     background-color: rgb(223, 223, 223);
@@ -74,6 +73,19 @@ main{
     color: red;
     font-weight: 700;
     font-size: 0.7em;
+}
+.login_label small{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 10px;
+    color: grey;
+    font-size: 0.8em;
+}
+.login_label small:hover{
+    color: red;
+    cursor: poiter;
 }
 
 .login_redes{
