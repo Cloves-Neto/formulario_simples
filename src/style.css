@@ -5,11 +5,15 @@
 
 /* Formatação seção de Login - Inicio */
 
+main{
+    display: flex;
+}
 .login{
 /* direção do conteúdo interno  */
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 /* tamanho da seção */
     width: 100%;
     max-width: 500px;
@@ -170,5 +174,32 @@ margin: 1px 4px;
     color:#c9c9c9
 }
 
+.login_link{
+    color: gray;
+    margin-top: 50px;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.login_link.conta{
+    text-decoration: underline;
+    line-height: 0.5px;
+    margin-top: 10px;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 
+.wallpaper{
+    width: 100%;
+    background-image: url('../assets/bg.png');
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
