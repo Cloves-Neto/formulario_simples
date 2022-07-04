@@ -85,7 +85,7 @@ main{
 }
 .login_label small:hover{
     color: red;
-    cursor: poniter;
+    cursor: pointer;
 }
 
 .login_redes{
