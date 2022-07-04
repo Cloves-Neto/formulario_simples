@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <form class="login"  autocomplete="on">
+        <img class="login_logo"  src="./assets/logo.png"  alt="logo-riot">
+
+        <h1 class="login_titulo">Fazer Login</h1>
+
+        <!-- Username_space -->
+        <label class="login_label" for="username">
+            <span>Username</span>
+            <input class="input" type="text" name="username" id="username">
+        </label>
+        <!-- Password_space -->
+        <label class="login_label" for="password">
+            <span>Password</span>
+            <input class="input" type="password" name="password" id="password">
+        </label>
+
+        <section class="login_redes">
+            <a href="#" target="_blank" rel="facebook">
+                <img src="./assets/facebook.png" alt="">
+            </a>
+
+            <a href="#" target="_blank" rel="google">
+                <img src="./assets/google.png" alt="">
+            </a>
+
+            <a href="#" target="_blank" rel="twitter">
+                <img src="./assets/apple.jpg" alt="">
+            </a>
+        </section>
+
+        <label class="manter_login" for="check">
+            <input type="checkbox" name="chekck" id="check">
+            <span>
+                manter login
+            </span>
+        </label>
+
+        <button class="login_button"  disabled>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+        </button>
+    </form>
+
+<script src="./src/script.js"></script>
+<script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
+<script  nomodule  src = "https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+
+@import url(reset.css);
+
+/* Espaço de definição de variaveis */
+
+/* Formatação seção de Login - Inicio */
+
+.login{
+/* direção do conteúdo interno  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+/* tamanho da seção */
+    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
+/* espaçamento interno */
+    /* clamp( min-medida, valor-desejavél, max-medida) */
+    padding: clamp(35px, 8%, 70px);
+/* cor de fundo */
+    background-color: whitesmoke;
+}
+.login_logo{
+    width: 130px;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+.login_titulo{
+    color: #343434;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    cursor: default;
+}
+.login_label{
+    display: block;
+    width: 100%;
+    margin-bottom: 60px;
+    position: relative;
+}
+.login_label input{
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9em;
+    border: solid 2px #91919188;
+    padding: 20px 10px 10px;
+    font-weight: 600;
+    color: #343434;
+
+}
+.login_label input:focus{
+    background-color: rgb(223, 223, 223);
+    border: solid 2px #343434;
+}
+.login_label span{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    font-size: 1em;
+    font-weight: 700;
+    color: rgb(190, 190, 190);
+    cursor: text;
+    transition: all .5s ease;
+}
+.login_label .span-active{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: red;
+    font-weight: 700;
+    font-size: 0.7em;
+}
+
+.login_redes{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.login_redes a {
+    width: 120px;
+    height: 30px;
+    background-color: white;
+    border: solid 1px #c9c9c9;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    margin: 0 2px;
+}
+.login_redes a img{
+    width: 100%;
+    max-width: 20px;
+}
+.login_redes a:nth-child(1){
+    background-color: #1877F2;
+}
+.login_redes a:nth-child(1) img{
+    max-width: 25px;
+    margin-bottom: 5px;
+}
+.login_redes a:nth-child(2){
+    background-color: rgb(255, 255, 255);
+}
+.login_redes a:nth-child(2) img{
+    max-width: 16px;
+}
+.login_redes a:nth-child(3){
+    background-color: rgb(0, 0, 0);
+}
+.login_redes a:nth-child(3) img{
+    max-width: 25px;
+}
+
+.manter_login{
+    width: 100%;
+    margin: 20px 0 50px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.manter_login input{
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    background-color: #c9c9c9;
+    border-radius: 2px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.manter_login input:checked{
+    background-color: red;
+}
+.manter_login input:checked::after{
+content: "";
+display: block;
+width: 3px;
+height: 7px;
+border: solid 3px rgb(255, 255, 255);
+border-width: 0 3px 3px 0;
+transform: rotate(45deg);
+margin: 1px 4px;
+}
+
+.login_button{
+    background-color: red;
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    cursor: pointer;
+    border: none;
+    transition: .2s ease;
+}
+
+.login_button ion-icon{
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+.login_button:disabled{
+    background-color: #ffffff;
+    border: none;
+}
+.login_button:disabled ion-icon{
+    color:#c9c9c9
+}
+
+
+
